@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Formulario a CV</title>
+</head>
+<body>
+
+
+    <form id="formulario" onsubmit="return validarCampos()">
+
+        <h1>Bienvenido</h1>
+        <h3>Completa todos los campos y presione el boton subir.</h3>
+
+        <label for="Nombres y Apellidos">Nombres y Apellidos</label><br>
+        <input type="text" name="Nombres y Apellidos" id="cname"><br><br>
+
+        <label for="nacimiento">Fecha de Nacimiento</label><br>
+        <input type="date" id="nacimiento" name="Nacimiento"><br><br>
+
+        <label for="ocupacion">Ocupación</label><br>
+        <input type="text" name="Ocupación" id="ocupacion"><br><br>
+
+        <label for="contacto">Telefono:</label><br>
+        <input type="text" name="Telefono" id="contacto"><br><br>
+
+        <label for="correo">Correo:</label><br>
+        <input type="email" name="Correo Electronico" id="correo"><br><br>
+
+        <select name="Nacionalidad" id="nacionalidad">
+            <option selected>Nacionalidad</option>
+            <option value="1">Perú</option>
+            <option value="2">Chile</option>
+            <option value="3">Colombia</option>
+            <option value="4">Otro</option>
+        </select>
+
+        <p>Nivel de ingles:</p>
+        <input type="radio" name="Nivel de Ingles" id="basico">
+        <label for="basico">Básico</label><br>
+        <input type="radio" name="Nivel de Ingles" id="intermedio">
+        <label for="intermedio">Intermedio</label><br>
+        <input type="radio" name="Nivel de Ingles" id="avanzado">
+        <label for="avanzado">Avanzado</label><br>
+        <input type="radio" name="Nivel de Ingles" id="fluido">
+        <label for="fluido">Fluido</label><br>
+
+        <label for="leng">Lenguajes de programación:</label>
+
+        <select name="Lenguaje de Programación" id="leng" multiple>
+            <option value="python">Python</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+            <option value="audi">Ruby</option>
+        </select><br><br>
+
+        <label>Idioma:<input list="idi" name="Idioma" /></label>
+        <datalist id="idi">
+          <option value="Frances"></option>
+          <option value="Español"></option>
+          <option value="Ruso"></option>
+          <option value="Italiano"></option>
+          <option value="Portugues"></option>
+          <option value="Aleman"></option>
+          <option value="Chino"></option>
+          <option value="Japones"></option>
+        </datalist><br><br>
+
+
+        <label>Aptitudes:<input list="ap" name="Aptitudes" /></label>
+        <datalist id="ap">
+          <option value="Deportiva"></option>
+          <option value="Artistica"></option>
+          <option value="Verbal"></option>
+        </datalist>
+
+        <p>Habilidades:</p>
+        <input type="checkbox" name="Habilidades" id="comunicacion">
+        <label for="comunicacion">Comunicación</label><br>
+        <input type="checkbox" name="Habilidades" id="empatia">
+        <label for="empatia">Empatía</label><br>
+        <input type="checkbox" name="Habilidades" id="responsabilidad">
+        <label for="responsabilidad">Responsabilidad</label><br><br>
+
+        <label for="explab">Experiencia Laboral:</label><br>
+        <textarea name="Experiencia Laboral" id="explab" cols="50" rows="10"></textarea>
+
+
+        <br><br>
+        <label for="perfil">Perfil</label><br>
+        <textarea name="Perfil" id="perfil" cols="50" rows="5"></textarea>
+
+        <button type="button" onclick="mostrarData()">Enviar.</button>
+
+    </form>
+    <div id="datosMostrados" style="display: none;">
+    </div>
+</body>
+</html>
+
