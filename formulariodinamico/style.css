@@ -1,0 +1,20 @@
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-gap: 0px;
+    grid-template-areas:
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9";
+        background-color: #01cc77;
+}
+.grid-item5{
+    background: #f7f7f7;
+    grid-area: area5;
+    padding: 50px;
+    border: 2px solid rgb(0, 131, 44);
+    border-radius: 5%;
+    
+}
