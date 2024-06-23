@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page1">
+
+    <Grid RowSpacing="0"
+          ColumnSpacing="0">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            
+        </Grid.ColumnDefinitions>
+
+        <Image Source="figura.png" Grid.Row="0" Grid.Column="0"  BackgroundColor="Gray"/>
+
+        <Label x:Name="labelNombre" TextColor="White" BackgroundColor="Gray" Grid.Row="0" 
+               Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+        <Label x:Name="labelFecha" TextColor="Black" BackgroundColor="LightGray" Grid.Row="1" 
+               Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+        <Label x:Name="labelTelefono" TextColor="Black" BackgroundColor="LightGray" Grid.Row="2" 
+               Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+        <Label x:Name="labelEmail" TextColor="Black" BackgroundColor="LightGray" Grid.Row="3" 
+               Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+        <Label x:Name="labelAptitud" TextColor="Black" BackgroundColor="White" Grid.Row="1" 
+               Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+        <Label x:Name="labelExperiencia" Grid.Row="2" Grid.Column="1"  TextColor="black" 
+               BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+        <Label x:Name="labelFormacion" Grid.Row="3" Grid.Column="1"  TextColor="Black" 
+               BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+    </Grid>
+
+</ContentPage>

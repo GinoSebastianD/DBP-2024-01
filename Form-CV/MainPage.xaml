@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage"
+             Title="Bienvenido">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Subir"
+                     Clicked="InformacionAgregada"/>
+
+    </ContentPage.ToolbarItems>
+
+
+    <StackLayout>
+        <Label Text="Completa los Campos y presione el boton de subir" HorizontalTextAlignment="Center" TextColor="Black" FontSize="20"/>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nombres y Apellidos:" />
+            <Entry x:Name="entryNombre" Placeholder="Ingresa tu Nombre y Apellido" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Fecha de Nacimiento:" />
+            <Entry x:Name="entryFecha" Placeholder="Ingresa tu fecha de nacimiento" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Ocupación:" />
+            <Entry x:Name="entryOcupacion" Placeholder="Ingrese su ocupación" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Telefono:" />
+            <Entry x:Name="entryTelefono" Placeholder="Ingrese su telefono" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Email:" />
+            <Entry x:Name="entryEmail" Placeholder="Ingrese su Email" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Aptitudes:" />
+            <Entry x:Name="entryAptitud" Placeholder="Ingrese sus aptitudes." />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Experiencia Laboral:" />
+            <Entry x:Name="entryExperiencia1" Placeholder="Ingrese sus Experiencias." />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Experiencia Laboral:" />
+            <Entry x:Name="entryExperiencia2" Placeholder="Ingrese sus Experiencias." />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Formación:" />
+            <Entry x:Name="entryFormacion1" Placeholder="Ingrese sus formacion." />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Formación:" />
+            <Entry x:Name="entryFormacion2" Placeholder="Ingrese sus formacion." />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="label"
+               Text="Presiona el boton de arriba para subir."
+               FontSize="20"
+               VerticalOptions="Start"
+               HorizontalOptions="Start" />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
